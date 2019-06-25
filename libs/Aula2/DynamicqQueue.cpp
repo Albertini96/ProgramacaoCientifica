@@ -34,15 +34,20 @@ void DynamicQueue::front(){
 void DynamicQueue::test(){
     std::cout<< "Testing DynamicQueue: " << std::endl;
     
+    std::cout<< "Enqueuing number 1 " << std::endl;
     this->enqueue(1);
+    std::cout<< "Enqueuing number 2 " << std::endl;
     this->enqueue(2);
+    std::cout<< "Enqueuing number 3 " << std::endl;
     this->enqueue(3);
+    std::cout<< "Enqueuing number 4 " << std::endl;
     this->enqueue(4);
     
     this->front();
     
-    this->dequeue();
-    this->dequeue();
+    
+    std::cout<< "Dequeued number " << this->dequeue() << std::endl;
+    std::cout<< "Dequeued number " << this->dequeue() << std::endl;
     
     this->front();
     

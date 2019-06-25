@@ -9,14 +9,11 @@
 #include "Node.hpp"
 
 //Constructors and destructors
-
 Node::Node():content(0), nextNode(nullptr){}
 Node::Node(int a):content(a), nextNode(nullptr){}
 Node::Node(int a, Node* ne):content(a), nextNode(ne){}
 Node::Node(Node* ne):content(0), nextNode(ne){}
-
 Node::~Node(){}
-
 
 //Methods
 

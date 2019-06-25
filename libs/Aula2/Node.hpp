@@ -19,15 +19,18 @@ private:
     
 public:
     
+    //Constructor and Destructors
     Node();
     Node(int a);
     Node(int a, Node* ne);
     Node(Node* ne);
     ~Node();
     
-    
+    //Get pointer to next linked node
     Node* getNextNode();
+    //Set the pointer to next linked node
     bool setNextNode(Node* next);
+    //Return content of node
     int getContent();
     
 };

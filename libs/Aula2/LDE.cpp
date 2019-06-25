@@ -9,7 +9,6 @@
 #include "LDE.hpp"
 
 //Constructors and destructors
-
 LDE::LDE(){
     
     this->firstNode = nullptr;
@@ -21,11 +20,12 @@ LDE::~LDE(){};
 
 //Methods
 
+//Return whether the list is empty
 bool LDE::isEmpty(){
     return this->numberOfNodes == 0 ? true : false;
 }
 
-
+//Prints all elements of list
 void LDE::showList(){
     
     if(!this->isEmpty()){
@@ -39,6 +39,7 @@ void LDE::showList(){
     
 }
 
+//Insert a node on the front of list
 bool LDE::insertNodeFront(int a){
     
     bool ret = false;
@@ -73,6 +74,7 @@ bool LDE::insertNodeFront(int a){
     return ret;
 }
 
+//Insert a node on the back of list
 bool LDE::insertNodeBack(int a){
     bool ret = false;
     
@@ -111,6 +113,7 @@ bool LDE::insertNodeBack(int a){
     return ret;
 }
 
+//Remove a node from front of list
 int LDE::removeFrontNode(){
     
     int ret = 0;
@@ -142,6 +145,7 @@ int LDE::removeFrontNode(){
     return ret;
 }
 
+//Remove a node from back of list
 int LDE::removeBackNode(){
     
     int ret = 0;
@@ -176,6 +180,7 @@ int LDE::removeBackNode(){
     return ret;
 }
 
+//Prints the back element of list on console
 void LDE::peekBack(){
     
     if(this->isEmpty()){
@@ -192,6 +197,7 @@ void LDE::peekBack(){
     
 }
 
+//Prints the front element of list on console
 void LDE::peekFront(){
     if(this->isEmpty()){
         std::cout<< "List is empty."<< std::endl;

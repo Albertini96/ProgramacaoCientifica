@@ -14,13 +14,19 @@
 class DynamicStack : public LDE{
 public:
     
+    //Constructor and Destructors
     DynamicStack();
     ~DynamicStack();
     
+    //Push a new element on the stack
     bool push(int a);
+    //Pop the top element of the stack
     int pop();
+    //Check if stack is empty
     bool isStackEmpty();
+    //Prints top element on console
     void top();
+    //Perform basic operations
     void test();
 };
 
