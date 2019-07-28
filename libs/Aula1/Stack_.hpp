@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 class Stack {
-    
+
 private:
     int stackSize;
     int qtElements;
@@ -28,4 +28,3 @@ public:
 };
 
 #endif /* Stack_hpp */
-

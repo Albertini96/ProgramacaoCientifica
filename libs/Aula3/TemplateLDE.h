@@ -1,6 +1,6 @@
 //
 //  TemplateLDE.hpp
-//  Aula2
+//  Aula3
 //
 //  Created by Guilherme Albertini on 22/06/19.
 //  Copyright © 2019 Guilherme Albertini. All rights reserved.
@@ -10,7 +10,7 @@
 #define TemplateLDE_hpp
 
 #include <stdio.h>
-#include "TemplateNode.cpp"
+#include "TemplateNode.h"
 #include <iostream>
 
 template <typename T>
@@ -23,13 +23,18 @@ private:
 public:
     
     //Empty constructor
-    TemplateLDE();
+    TemplateLDE():numberOfNodes(0),firstNode(nullptr){};
     //Empty destructor
-    ~TemplateLDE();
+    ~TemplateLDE(){};
     
     //Return whether the list is empty
     bool isEmpty(){
         return this->numberOfNodes == 0 ? true : false;
+    }
+    
+    //Get number of nodes
+    int getNumberOfNodes(){
+        return this->numberOfNodes;
     }
     
     //Insert a TemplateNode on the front of list
@@ -109,7 +114,7 @@ public:
     //Remove a TemplateNode from front of list
     T removeFrontNode(){
         
-        T ret = NULL;
+        T ret;
         
         if(!this->isEmpty()){
             if(numberOfNodes == 1){
@@ -141,7 +146,7 @@ public:
     //Remove a TemplateNode from back of list
     T removeBackNode(){
         
-        T ret = NULL;
+        T ret;
         
         if(!this->isEmpty()){
             if(numberOfNodes == 1){
@@ -172,8 +177,56 @@ public:
         
         return ret;
     }
+    
+    //get a TemplateNode from back of list
+    T getBackNode(){
+        
+        T ret;
+        
+        if(!this->isEmpty()){
+            if(numberOfNodes == 1){
+                
+                ret = this->firstNode->getContent();
+                
+            }else{
+                TemplateNode<T>* lastNode = firstNode;
+                TemplateNode<T>* lastlastNode = nullptr;
+                
+                do{
+                    lastlastNode = lastNode;
+                    lastNode = lastNode->getNextNode();
+                }while(lastNode->getNextNode() != nullptr);
+                
+                ret = lastNode->getContent();
+            }
+        }
+        
+        return ret;
+    }
+    
+    //get a TemplateNode from front of list
+    T getFrontNode(){
+        return this->firstNode->getContent();
+    }
+    
+    
+    //Prints all elements of list
+    void showList(){
+        
+        if(!this->isEmpty()){
+            TemplateNode<T>* current = firstNode;
+            
+            do{
+                std::cout<<current->getContent()<<std::endl;
+                current = current->getNextNode();
+            }while(current != nullptr);
+        }
+        
+    }
 
 };
 
 
 #endif /* TemplateLDE_hpp */
+
+

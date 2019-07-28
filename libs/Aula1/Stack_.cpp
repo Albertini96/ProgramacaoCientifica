@@ -65,4 +65,3 @@ int Stack::pop(){
     
     return ret;
 }
-

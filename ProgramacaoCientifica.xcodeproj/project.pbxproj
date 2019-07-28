@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F93B04022E93D1400BBCC4E /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F93B03E22E93D1400BBCC4E /* Stack.cpp */; };
 		3FD5F39022B9916000FFF5F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FD5F38F22B9916000FFF5F2 /* main.cpp */; };
 		3FFEBB9D22BEC2F000CC8DB3 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEBB9122BEC2F000CC8DB3 /* Node.cpp */; };
 		3FFEBB9E22BEC2F000CC8DB3 /* LDE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEBB9222BEC2F000CC8DB3 /* LDE.cpp */; };
 		3FFEBB9F22BEC2F000CC8DB3 /* DynamicStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEBB9322BEC2F000CC8DB3 /* DynamicStack.cpp */; };
 		3FFEBBA022BEC2F000CC8DB3 /* DynamicqQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEBB9622BEC2F000CC8DB3 /* DynamicqQueue.cpp */; };
-		3FFEBBA122BEC2F000CC8DB3 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEBB9A22BEC2F000CC8DB3 /* Stack.cpp */; };
 		3FFEBBA222BEC2F000CC8DB3 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FFEBB9B22BEC2F000CC8DB3 /* Queue.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +29,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F1A001022EA7E1400B0EF40 /* TreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		3F1A001122EA7FF900B0EF40 /* Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		3F21737322EE0B860052264B /* Puzzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Puzzle.h; sourceTree = "<group>"; };
+		3F21737422EE1A9F0052264B /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		3F21737522EE28DE0052264B /* TemplateDynamicQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateDynamicQueue.h; sourceTree = "<group>"; };
+		3F21737622EE29BC0052264B /* TemplateDynamicStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateDynamicStack.h; sourceTree = "<group>"; };
+		3F93B03E22E93D1400BBCC4E /* Stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
+		3F93B03F22E93D1400BBCC4E /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
+		3F93B04922E93F4C00BBCC4E /* TemplateLDE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateLDE.h; sourceTree = "<group>"; };
+		3F93B04A22E93F6300BBCC4E /* TemplateNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateNode.h; sourceTree = "<group>"; };
 		3FD5F38C22B9916000FFF5F2 /* ProgramacaoCientifica */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProgramacaoCientifica; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD5F38F22B9916000FFF5F2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3FFEBB9022BEC2F000CC8DB3 /* DynamicStack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DynamicStack.hpp; sourceTree = "<group>"; };
@@ -40,9 +50,7 @@
 		3FFEBB9622BEC2F000CC8DB3 /* DynamicqQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicqQueue.cpp; sourceTree = "<group>"; };
 		3FFEBB9722BEC2F000CC8DB3 /* LDE.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LDE.hpp; sourceTree = "<group>"; };
 		3FFEBB9922BEC2F000CC8DB3 /* Queue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
-		3FFEBB9A22BEC2F000CC8DB3 /* Stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
 		3FFEBB9B22BEC2F000CC8DB3 /* Queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
-		3FFEBB9C22BEC2F000CC8DB3 /* Stack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F93B03422E9319100BBCC4E /* Aula3 */ = {
+			isa = PBXGroup;
+			children = (
+				3F93B04A22E93F6300BBCC4E /* TemplateNode.h */,
+				3F93B04922E93F4C00BBCC4E /* TemplateLDE.h */,
+				3F1A001022EA7E1400B0EF40 /* TreeNode.h */,
+				3F1A001122EA7FF900B0EF40 /* Tree.h */,
+				3F21737322EE0B860052264B /* Puzzle.h */,
+				3F21737422EE1A9F0052264B /* Domain.h */,
+				3F21737522EE28DE0052264B /* TemplateDynamicQueue.h */,
+				3F21737622EE29BC0052264B /* TemplateDynamicStack.h */,
+			);
+			path = Aula3;
+			sourceTree = "<group>";
+		};
 		3FD5F38322B9916000FFF5F2 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +107,7 @@
 		3FFEBB8E22BEC2F000CC8DB3 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				3F93B03422E9319100BBCC4E /* Aula3 */,
 				3FFEBB8F22BEC2F000CC8DB3 /* Aula2 */,
 				3FFEBB9822BEC2F000CC8DB3 /* Aula1 */,
 			);
@@ -109,9 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				3FFEBB9922BEC2F000CC8DB3 /* Queue.hpp */,
-				3FFEBB9A22BEC2F000CC8DB3 /* Stack.cpp */,
 				3FFEBB9B22BEC2F000CC8DB3 /* Queue.cpp */,
-				3FFEBB9C22BEC2F000CC8DB3 /* Stack.hpp */,
+				3F93B03E22E93D1400BBCC4E /* Stack.cpp */,
+				3F93B03F22E93D1400BBCC4E /* Stack.hpp */,
 			);
 			path = Aula1;
 			sourceTree = "<group>";
@@ -176,10 +200,10 @@
 				3FFEBBA222BEC2F000CC8DB3 /* Queue.cpp in Sources */,
 				3FFEBB9F22BEC2F000CC8DB3 /* DynamicStack.cpp in Sources */,
 				3FFEBB9E22BEC2F000CC8DB3 /* LDE.cpp in Sources */,
-				3FFEBBA122BEC2F000CC8DB3 /* Stack.cpp in Sources */,
 				3FFEBBA022BEC2F000CC8DB3 /* DynamicqQueue.cpp in Sources */,
 				3FD5F39022B9916000FFF5F2 /* main.cpp in Sources */,
 				3FFEBB9D22BEC2F000CC8DB3 /* Node.cpp in Sources */,
+				3F93B04022E93D1400BBCC4E /* Stack.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
