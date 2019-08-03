@@ -138,6 +138,8 @@ public:
                 this->numberOfNodes--;
                 
             }
+        }else{
+            ret = NULL;
         }
         
         return ret;
@@ -173,6 +175,8 @@ public:
                 delete lastNode;
                 this->numberOfNodes--;
             }
+        }else{
+            ret = NULL;
         }
         
         return ret;
@@ -209,6 +213,23 @@ public:
         return this->firstNode->getContent();
     }
     
+    //Get pointer to first node
+    TemplateNode<T>* getFirstNode(){
+        return this->firstNode;
+    }
+    
+//    //Return copy of self
+//    TemplateLDE<T> getCopy(){
+//        TemplateLDE<T>* copy = new TemplateLDE<T>();
+//        TemplateNode<T>* current = this->firstNode;
+//
+//        do{
+//            copy->insertNodeFront(current->getContent());
+//            current = current->getNextNode();
+//        }while(current->getNextNode() != nullptr);
+//
+//        return copy;
+//    }
     
     //Prints all elements of list
     void showList(){

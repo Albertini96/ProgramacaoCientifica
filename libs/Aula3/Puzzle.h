@@ -51,6 +51,25 @@ public:
         return equal;
     }
     
+    //Get number of misplaced tiles
+    int getNumberOfMisplacedTiles(Puzzle goal){
+        int first_matrix[3][3];
+        int second_matrix[3][3];
+        int misplaced_tiles = 0;
+        
+        this->getState(first_matrix);
+        goal.getState(second_matrix);
+        
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                misplaced_tiles += first_matrix[i][j] != second_matrix[i][j];
+            }
+        }
+        
+        return misplaced_tiles;
+    }
+    
+    //Get List of possible moves for the current state
     TemplateLDE<Puzzle> getPossibleMoves(){
         TemplateLDE<Puzzle> possibleMoves;
         
@@ -99,13 +118,13 @@ public:
                     possibleMoves.insertNodeFront(Puzzle(temp_matrix));
                     
                     assign_matrix(this->state, temp_matrix);
-                    temp_matrix[0][1] = temp_matrix[0][2];
-                    temp_matrix[0][2] = 0;
+                    temp_matrix[0][1] = temp_matrix[1][1];
+                    temp_matrix[1][1] = 0;
                     possibleMoves.insertNodeFront(Puzzle(temp_matrix));
                     
                     assign_matrix(this->state, temp_matrix);
-                    temp_matrix[0][1] = temp_matrix[1][1];
-                    temp_matrix[1][1] = 0;
+                    temp_matrix[0][1] = temp_matrix[0][2];
+                    temp_matrix[0][2] = 0;
                     possibleMoves.insertNodeFront(Puzzle(temp_matrix));
                     
                     break;
@@ -206,8 +225,8 @@ public:
                     break;
                 case 1:
                     assign_matrix(this->state, temp_matrix);
-                    temp_matrix[2][1] = temp_matrix[0][2];
-                    temp_matrix[0][2] = 0;
+                    temp_matrix[2][1] = temp_matrix[2][0];
+                    temp_matrix[2][0] = 0;
                     possibleMoves.insertNodeFront(Puzzle(temp_matrix));
                     
                     assign_matrix(this->state, temp_matrix);

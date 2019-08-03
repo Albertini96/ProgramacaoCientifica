@@ -27,33 +27,36 @@ int main(int argc, const char * argv[]) {
 //
         int initial_state[3][3];
         
-        initial_state[0][0] = 1;
-        initial_state[0][1] = 2;
-        initial_state[0][2] = 8;
-        initial_state[1][0] = 7;
-        initial_state[1][1] = 0;
-        initial_state[1][2] = 3;
-        initial_state[2][0] = 6;
-        initial_state[2][1] = 5;
-        initial_state[2][2] = 4;
+        initial_state[0][0] = 4;
+        initial_state[0][1] = 1;
+        initial_state[0][2] = 6;
+        initial_state[1][0] = 3;
+        initial_state[1][1] = 2;
+        initial_state[1][2] = 8;
+        initial_state[2][0] = 7;
+        initial_state[2][1] = 0;
+        initial_state[2][2] = 5;
+
         
         int goal_state[3][3];
         
-        goal_state[0][0] = 0;
-        goal_state[0][1] = 1;
-        goal_state[0][2] = 2;
-        goal_state[1][0] = 3;
-        goal_state[1][1] = 4;
-        goal_state[1][2] = 5;
-        goal_state[2][0] = 6;
-        goal_state[2][1] = 7;
-        goal_state[2][2] = 8;
+        goal_state[0][0] = 1;
+        goal_state[0][1] = 2;
+        goal_state[0][2] = 3;
+        goal_state[1][0] = 4;
+        goal_state[1][1] = 5;
+        goal_state[1][2] = 6;
+        goal_state[2][0] = 7;
+        goal_state[2][1] = 8;
+        goal_state[2][2] = 0;
         
         Puzzle start_state = Puzzle(initial_state);
         Puzzle final_state = Puzzle(goal_state);
         
         Tree<Puzzle> arvore(start_state);
         arvore.dfs_traversal(final_state);
+//        arvore.bfs_traversal(final_state);
+//        arvore.hill_climbing(final_state);
         
     } catch (std::ios_base::failure& e) {
     

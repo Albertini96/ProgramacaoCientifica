@@ -36,6 +36,7 @@ public:
         this->nextNode = next;
         return true;
     };
+    
     //Return content of TemplateNode
     T getContent(){
         return this->content;

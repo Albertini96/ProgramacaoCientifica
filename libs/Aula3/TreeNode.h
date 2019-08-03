@@ -28,6 +28,19 @@ public:
         this->content = content;
     }
     
+    //Get depth of node
+    int getDepth(){
+        TreeNode<T>* current_node = this;
+        int depth = 0;
+        
+        while(current_node->getParent() != nullptr){
+            current_node = current_node->getParent();
+            depth++;
+        }
+        
+        return depth;
+    }
+    
     //Return pointer to parent
     void setParent(TreeNode<T>* parent){
         this->parentNode = parent;
