@@ -36,7 +36,6 @@ int main(int argc, const char * argv[]) {
         initial_state[2][0] = 7;
         initial_state[2][1] = 0;
         initial_state[2][2] = 5;
-
         
         int goal_state[3][3];
         
@@ -54,7 +53,7 @@ int main(int argc, const char * argv[]) {
         Puzzle final_state = Puzzle(goal_state);
         
         Tree<Puzzle> arvore(start_state);
-        arvore.dfs_traversal(final_state);
+//        arvore.dfs_traversal(final_state);
 //        arvore.bfs_traversal(final_state);
 //        arvore.hill_climbing(final_state);
         

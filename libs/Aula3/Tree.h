@@ -224,7 +224,64 @@ public:
     
     //Perform hill climbing search
     TreeNode<T>* hill_climbing(T search){
-        return nullptr;
+        //Node that has the answer
+        TreeNode<Puzzle>* ret = new TreeNode<Puzzle>();
+        
+        //Setting the root of tree on stack
+        this->bfsQueue->enqueue(this->rootNode);
+        
+        //Expanding tree
+        while (!this->bfsQueue->isEmpty()) {
+            //Setting current node
+            TreeNode<Puzzle>* currentNode = this->bfsQueue->dequeue();
+            
+            //Priting on console current state
+            std::cout<<"============================"<<std::endl;
+            std::cout<<"NODE BEING EXPLORED"<<std::endl;
+            std::cout<<"NODE DEPTH > "<< currentNode->getDepth()<<std::endl;
+            currentNode->getContent().printState();
+            
+            ret = currentNode;
+            
+            //If node has the answer stop, else create new possibilities
+            if(search.equalTo(currentNode->getContent())){
+                std::cout<<"============================"<<std::endl;
+                std::cout<<"ANSWER FOUND!"<<std::endl;
+                currentNode->getContent().printState();
+                break;
+            }else{
+                
+                //Obtaining possible moves
+                TemplateLDE<Puzzle> children = currentNode->getContent().getPossibleMoves();
+                
+                std::cout<<"CHILDREN"<<std::endl;
+                //Inserting possible moves as tree nodes
+                while(!children.isEmpty()){
+                    Puzzle temp = children.removeFrontNode();
+                    temp.printState();
+                    currentNode->insertChild(temp);
+                }
+                
+                TemplateNode<TreeNode<T>*>* node_children_ptr = currentNode->getChildrenList()->getFirstNode();
+                
+                int parent_heuristic = currentNode->getDepth() + currentNode->getContent().getNumberOfMisplacedTiles(search);
+                int child_heuristic = 0;
+                //ForEach child in children
+                do{
+                    child_heuristic = node_children_ptr->getContent()->getDepth() + node_children_ptr->getContent()->getContent().getNumberOfMisplacedTiles(search);
+                    
+                    if(child_heuristic < parent_heuristic){
+                        this->bfsQueue->enqueue(node_children_ptr->getContent());
+                        break;
+                    }
+                    
+                    node_children_ptr = node_children_ptr->getNextNode();
+                }while(node_children_ptr != nullptr);
+                
+            }
+            
+        }
+        return ret;
     }
     
     //Perform A* search
