@@ -31,6 +31,7 @@ public:
     TemplateNode* getNextNode(){
         return this->nextNode;
     };
+    
     //Set the pointer to next linked TemplateNode
     bool setNextNode(TemplateNode* next){
         this->nextNode = next;

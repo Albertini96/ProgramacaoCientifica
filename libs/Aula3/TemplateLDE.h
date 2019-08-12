@@ -231,6 +231,45 @@ public:
         }
         
     }
+    
+    //Remove on position
+    T removeOnPosition(int position){
+    
+        T ret;
+    
+        if(!this->isEmpty()){
+            if(numberOfNodes == 1){
+                
+                ret = this->firstNode->getContent();
+                
+                delete this->firstNode;
+                this->firstNode = nullptr;
+                this->numberOfNodes--;
+                
+            }else{
+                TemplateNode<T>* currentNode = firstNode;
+                TemplateNode<T>* lastNode = nullptr;
+                
+                for (int i = 0; i < position; i++) {
+                    lastNode = currentNode;
+                    currentNode = currentNode->getNextNode();
+                }
+                
+                ret = currentNode->getContent();
+                
+                if(position != 0)
+                    lastNode->setNextNode(currentNode->getNextNode());
+                else
+                    this->firstNode = currentNode->getNextNode();
+                    
+                delete currentNode;
+                this->numberOfNodes--;
+            }
+        }else{
+            ret = NULL;
+        }
+        return ret;
+    }
 
 };
 
