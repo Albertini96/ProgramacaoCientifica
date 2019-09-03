@@ -35,10 +35,12 @@
 		3F21737422EE1A9F0052264B /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		3F21737522EE28DE0052264B /* TemplateDynamicQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateDynamicQueue.h; sourceTree = "<group>"; };
 		3F21737622EE29BC0052264B /* TemplateDynamicStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateDynamicStack.h; sourceTree = "<group>"; };
+		3F759F3D23035DCA0092C703 /* GradientDescent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GradientDescent.hpp; sourceTree = "<group>"; };
 		3F93B03E22E93D1400BBCC4E /* Stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
 		3F93B03F22E93D1400BBCC4E /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		3F93B04922E93F4C00BBCC4E /* TemplateLDE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateLDE.h; sourceTree = "<group>"; };
 		3F93B04A22E93F6300BBCC4E /* TemplateNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateNode.h; sourceTree = "<group>"; };
+		3FA023CA23130D7400A68145 /* NumericalIntegration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumericalIntegration.h; sourceTree = "<group>"; };
 		3FD5F38C22B9916000FFF5F2 /* ProgramacaoCientifica */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProgramacaoCientifica; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD5F38F22B9916000FFF5F2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3FFEBB9022BEC2F000CC8DB3 /* DynamicStack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DynamicStack.hpp; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F759F3B23035CF20092C703 /* Aula4 */ = {
+			isa = PBXGroup;
+			children = (
+				3F759F3D23035DCA0092C703 /* GradientDescent.hpp */,
+			);
+			path = Aula4;
+			sourceTree = "<group>";
+		};
 		3F93B03422E9319100BBCC4E /* Aula3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,14 @@
 				3F21737622EE29BC0052264B /* TemplateDynamicStack.h */,
 			);
 			path = Aula3;
+			sourceTree = "<group>";
+		};
+		3FA023C923130D1F00A68145 /* Aula5 */ = {
+			isa = PBXGroup;
+			children = (
+				3FA023CA23130D7400A68145 /* NumericalIntegration.h */,
+			);
+			path = Aula5;
 			sourceTree = "<group>";
 		};
 		3FD5F38322B9916000FFF5F2 = {
@@ -107,6 +125,8 @@
 		3FFEBB8E22BEC2F000CC8DB3 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				3FA023C923130D1F00A68145 /* Aula5 */,
+				3F759F3B23035CF20092C703 /* Aula4 */,
 				3F93B03422E9319100BBCC4E /* Aula3 */,
 				3FFEBB8F22BEC2F000CC8DB3 /* Aula2 */,
 				3FFEBB9822BEC2F000CC8DB3 /* Aula1 */,
