@@ -19,3 +19,7 @@
 ### Aula 5
 
 > Integração Numérica por método Ponto Médio, Trapezoidal e Simpson. Utilizando quadratura adaptativa.
+
+### Aula 6
+
+> Integração Numérica por método Monte Carlo.
