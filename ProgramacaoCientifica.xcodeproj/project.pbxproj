@@ -35,12 +35,48 @@
 		3F21737422EE1A9F0052264B /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		3F21737522EE28DE0052264B /* TemplateDynamicQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateDynamicQueue.h; sourceTree = "<group>"; };
 		3F21737622EE29BC0052264B /* TemplateDynamicStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateDynamicStack.h; sourceTree = "<group>"; };
+		3F5152C8232D666A00788A6E /* MonteCarlo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MonteCarlo.hpp; sourceTree = "<group>"; };
 		3F759F3D23035DCA0092C703 /* GradientDescent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GradientDescent.hpp; sourceTree = "<group>"; };
 		3F93B03E22E93D1400BBCC4E /* Stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
 		3F93B03F22E93D1400BBCC4E /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		3F93B04922E93F4C00BBCC4E /* TemplateLDE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateLDE.h; sourceTree = "<group>"; };
 		3F93B04A22E93F6300BBCC4E /* TemplateNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateNode.h; sourceTree = "<group>"; };
 		3FA023CA23130D7400A68145 /* NumericalIntegration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumericalIntegration.h; sourceTree = "<group>"; };
+		3FBD32B7232D8B9B004FA1C8 /* mpif-sizeof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mpif-sizeof.h"; sourceTree = "<group>"; };
+		3FBD32B8232D8B9B004FA1C8 /* mpif-ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mpif-ext.h"; sourceTree = "<group>"; };
+		3FBD32B9232D8B9B004FA1C8 /* mpi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mpi.h; sourceTree = "<group>"; };
+		3FBD32BA232D8B9B004FA1C8 /* mpi-ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mpi-ext.h"; sourceTree = "<group>"; };
+		3FBD32BB232D8B9B004FA1C8 /* mpif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mpif.h; sourceTree = "<group>"; };
+		3FBD32BC232D8B9B004FA1C8 /* mpi_portable_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mpi_portable_platform.h; sourceTree = "<group>"; };
+		3FBD32BD232D8B9B004FA1C8 /* mpif-c-constants-decl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mpif-c-constants-decl.h"; sourceTree = "<group>"; };
+		3FBD32C3232D8B9B004FA1C8 /* mpiext_affinity_c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mpiext_affinity_c.h; sourceTree = "<group>"; };
+		3FBD32C6232D8B9B004FA1C8 /* mpiext_cuda_c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mpiext_cuda_c.h; sourceTree = "<group>"; };
+		3FBD32C8232D8BCB004FA1C8 /* ompi-ps */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ompi-ps"; sourceTree = "<group>"; };
+		3FBD32C9232D8BCB004FA1C8 /* orte-top */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "orte-top"; sourceTree = "<group>"; };
+		3FBD32CA232D8BCB004FA1C8 /* mpif90 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mpif90; sourceTree = "<group>"; };
+		3FBD32CB232D8BCB004FA1C8 /* ompi-submit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ompi-submit"; sourceTree = "<group>"; };
+		3FBD32CC232D8BCB004FA1C8 /* mpirun */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mpirun; sourceTree = "<group>"; };
+		3FBD32CD232D8BCB004FA1C8 /* orted */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = orted; sourceTree = "<group>"; };
+		3FBD32CE232D8BCB004FA1C8 /* ompi_info */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ompi_info; sourceTree = "<group>"; };
+		3FBD32CF232D8BCB004FA1C8 /* ompi-dvm */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ompi-dvm"; sourceTree = "<group>"; };
+		3FBD32D0232D8BCB004FA1C8 /* ompi-server */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ompi-server"; sourceTree = "<group>"; };
+		3FBD32D1232D8BCB004FA1C8 /* ompi-top */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ompi-top"; sourceTree = "<group>"; };
+		3FBD32D2232D8BCB004FA1C8 /* orte-clean */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "orte-clean"; sourceTree = "<group>"; };
+		3FBD32D3232D8BCB004FA1C8 /* mpif77 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mpif77; sourceTree = "<group>"; };
+		3FBD32D4232D8BCB004FA1C8 /* orte-dvm */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "orte-dvm"; sourceTree = "<group>"; };
+		3FBD32D5232D8BCB004FA1C8 /* mpicc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mpicc; sourceTree = "<group>"; };
+		3FBD32D6232D8BCB004FA1C8 /* orterun */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = orterun; sourceTree = "<group>"; };
+		3FBD32D7232D8BCB004FA1C8 /* opal_wrapper */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = opal_wrapper; sourceTree = "<group>"; };
+		3FBD32D8232D8BCB004FA1C8 /* orte-info */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "orte-info"; sourceTree = "<group>"; };
+		3FBD32D9232D8BCB004FA1C8 /* mpicxx */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mpicxx; sourceTree = "<group>"; };
+		3FBD32DA232D8BCB004FA1C8 /* orte-server */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "orte-server"; sourceTree = "<group>"; };
+		3FBD32DB232D8BCB004FA1C8 /* ompi-clean */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ompi-clean"; sourceTree = "<group>"; };
+		3FBD32DC232D8BCB004FA1C8 /* mpiexec */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mpiexec; sourceTree = "<group>"; };
+		3FBD32DD232D8BCB004FA1C8 /* mpic++ */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "mpic++"; sourceTree = "<group>"; };
+		3FBD32DE232D8BCB004FA1C8 /* mpifort */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mpifort; sourceTree = "<group>"; };
+		3FBD32DF232D8BCB004FA1C8 /* ortecc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ortecc; sourceTree = "<group>"; };
+		3FBD32E0232D8BCB004FA1C8 /* orte-submit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "orte-submit"; sourceTree = "<group>"; };
+		3FBD32E1232D8BCB004FA1C8 /* orte-ps */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "orte-ps"; sourceTree = "<group>"; };
 		3FD5F38C22B9916000FFF5F2 /* ProgramacaoCientifica */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProgramacaoCientifica; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD5F38F22B9916000FFF5F2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3FFEBB9022BEC2F000CC8DB3 /* DynamicStack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DynamicStack.hpp; sourceTree = "<group>"; };
@@ -66,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F5152C6232D664900788A6E /* Aula6 */ = {
+			isa = PBXGroup;
+			children = (
+				3F5152C8232D666A00788A6E /* MonteCarlo.hpp */,
+			);
+			path = Aula6;
+			sourceTree = "<group>";
+		};
 		3F759F3B23035CF20092C703 /* Aula4 */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +141,129 @@
 			path = Aula5;
 			sourceTree = "<group>";
 		};
+		3FBD32B5232D8B9B004FA1C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD32C7232D8BCB004FA1C8 /* bin */,
+				3FBD32B6232D8B9B004FA1C8 /* include */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FBD32B6232D8B9B004FA1C8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD32B7232D8B9B004FA1C8 /* mpif-sizeof.h */,
+				3FBD32B8232D8B9B004FA1C8 /* mpif-ext.h */,
+				3FBD32B9232D8B9B004FA1C8 /* mpi.h */,
+				3FBD32BA232D8B9B004FA1C8 /* mpi-ext.h */,
+				3FBD32BB232D8B9B004FA1C8 /* mpif.h */,
+				3FBD32BC232D8B9B004FA1C8 /* mpi_portable_platform.h */,
+				3FBD32BD232D8B9B004FA1C8 /* mpif-c-constants-decl.h */,
+				3FBD32BE232D8B9B004FA1C8 /* openmpi */,
+			);
+			name = include;
+			path = ../../../../../opt/usr/local/include;
+			sourceTree = "<group>";
+		};
+		3FBD32BE232D8B9B004FA1C8 /* openmpi */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD32BF232D8B9B004FA1C8 /* ompi */,
+			);
+			path = openmpi;
+			sourceTree = "<group>";
+		};
+		3FBD32BF232D8B9B004FA1C8 /* ompi */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD32C0232D8B9B004FA1C8 /* mpiext */,
+			);
+			path = ompi;
+			sourceTree = "<group>";
+		};
+		3FBD32C0232D8B9B004FA1C8 /* mpiext */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD32C1232D8B9B004FA1C8 /* affinity */,
+				3FBD32C4232D8B9B004FA1C8 /* cuda */,
+			);
+			path = mpiext;
+			sourceTree = "<group>";
+		};
+		3FBD32C1232D8B9B004FA1C8 /* affinity */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD32C2232D8B9B004FA1C8 /* c */,
+			);
+			path = affinity;
+			sourceTree = "<group>";
+		};
+		3FBD32C2232D8B9B004FA1C8 /* c */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD32C3232D8B9B004FA1C8 /* mpiext_affinity_c.h */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		3FBD32C4232D8B9B004FA1C8 /* cuda */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD32C5232D8B9B004FA1C8 /* c */,
+			);
+			path = cuda;
+			sourceTree = "<group>";
+		};
+		3FBD32C5232D8B9B004FA1C8 /* c */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD32C6232D8B9B004FA1C8 /* mpiext_cuda_c.h */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		3FBD32C7232D8BCB004FA1C8 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD32C8232D8BCB004FA1C8 /* ompi-ps */,
+				3FBD32C9232D8BCB004FA1C8 /* orte-top */,
+				3FBD32CA232D8BCB004FA1C8 /* mpif90 */,
+				3FBD32CB232D8BCB004FA1C8 /* ompi-submit */,
+				3FBD32CC232D8BCB004FA1C8 /* mpirun */,
+				3FBD32CD232D8BCB004FA1C8 /* orted */,
+				3FBD32CE232D8BCB004FA1C8 /* ompi_info */,
+				3FBD32CF232D8BCB004FA1C8 /* ompi-dvm */,
+				3FBD32D0232D8BCB004FA1C8 /* ompi-server */,
+				3FBD32D1232D8BCB004FA1C8 /* ompi-top */,
+				3FBD32D2232D8BCB004FA1C8 /* orte-clean */,
+				3FBD32D3232D8BCB004FA1C8 /* mpif77 */,
+				3FBD32D4232D8BCB004FA1C8 /* orte-dvm */,
+				3FBD32D5232D8BCB004FA1C8 /* mpicc */,
+				3FBD32D6232D8BCB004FA1C8 /* orterun */,
+				3FBD32D7232D8BCB004FA1C8 /* opal_wrapper */,
+				3FBD32D8232D8BCB004FA1C8 /* orte-info */,
+				3FBD32D9232D8BCB004FA1C8 /* mpicxx */,
+				3FBD32DA232D8BCB004FA1C8 /* orte-server */,
+				3FBD32DB232D8BCB004FA1C8 /* ompi-clean */,
+				3FBD32DC232D8BCB004FA1C8 /* mpiexec */,
+				3FBD32DD232D8BCB004FA1C8 /* mpic++ */,
+				3FBD32DE232D8BCB004FA1C8 /* mpifort */,
+				3FBD32DF232D8BCB004FA1C8 /* ortecc */,
+				3FBD32E0232D8BCB004FA1C8 /* orte-submit */,
+				3FBD32E1232D8BCB004FA1C8 /* orte-ps */,
+			);
+			name = bin;
+			path = ../../../../../opt/usr/local/bin;
+			sourceTree = "<group>";
+		};
 		3FD5F38322B9916000FFF5F2 = {
 			isa = PBXGroup;
 			children = (
 				3FFEBB8E22BEC2F000CC8DB3 /* libs */,
 				3FD5F38E22B9916000FFF5F2 /* main */,
 				3FD5F38D22B9916000FFF5F2 /* Products */,
+				3FBD32B5232D8B9B004FA1C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +286,7 @@
 		3FFEBB8E22BEC2F000CC8DB3 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				3F5152C6232D664900788A6E /* Aula6 */,
 				3FA023C923130D1F00A68145 /* Aula5 */,
 				3F759F3B23035CF20092C703 /* Aula4 */,
 				3F93B03422E9319100BBCC4E /* Aula3 */,
